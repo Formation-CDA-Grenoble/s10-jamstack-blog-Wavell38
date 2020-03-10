@@ -26,7 +26,7 @@ query MyQuery {
 }
 `;
 
-const Category = ({ category, allArticles, match }) => {
+const Category = ({ allArticles, match }) => {
   const { slug } = match.params;
   const filteredArticles = allArticles.filter(
     article => article.category.slug === slug
@@ -34,7 +34,7 @@ const Category = ({ category, allArticles, match }) => {
 
   return (
     <Layout>
-      <h1>Category: {category.name}</h1>
+      <h1>Category: {slug}</h1>
       <ArticleList articles={filteredArticles} />
     </Layout>
   );

@@ -1,0 +1,13 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.aside {
+    padding-top: 50px;
+    min-width: 120px;
+    max-width: 250px;
+    width: 100%;
+}
+  
+ 
